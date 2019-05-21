@@ -1,0 +1,162 @@
+version=11;
+class Mission
+{
+	addOns[]=
+	{
+		"united_states_h",
+		"hsim_air_us_h_helicopters_medium",
+		"hsim_characters_us_h"
+	};
+	addOnsAuto[]=
+	{
+		"hsim_characters_us_h",
+		"hsim_air_us_h_helicopters_medium",
+		"united_states_h"
+	};
+	randomSeed=11999277;
+	class Intel
+	{
+		briefingName="Test Single 1";
+		startWeather=0.35000002;
+		startWind=0.1;
+		forecastWeather=0.35000002;
+		forecastWind=0.1;
+		year=2013;
+		day=8;
+		hour=11;
+		minute=20;
+	};
+	class Groups
+	{
+		items=2;
+		class Item0
+		{
+			side="GUER";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={27900.418,3.9327343,29781.262};
+					azimut=55;
+					special="NONE";
+					age="ACTUAL";
+					id=0;
+					side="GUER";
+					vehicle="Contractor01_H";
+					leader=1;
+					lock="UNLOCKED";
+					rank="CORPORAL";
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item1
+		{
+			side="CIV";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={27904.773,4.1129684,29777.039};
+					azimut=60;
+					age="ACTUAL";
+					id=1;
+					side="CIV";
+					vehicle="Heli_Medium01_FLIR_H";
+					player="PLAYER DRIVER";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+					text="falconN01";
+					init="script = [] execVM ""hudElems.sqf"";";
+				};
+			};
+		};
+	};
+	class Sensors
+	{
+		items=1;
+		class Item0
+		{
+			position[]={27905.908,3.897578,29782.086};
+			activationBy="GUER";
+			interruptable=1;
+			age="UNKNOWN";
+			expActiv="script = [] execVM ""testScript1.sqf""";
+			class Effects
+			{
+			};
+		};
+	};
+};
+class Intro
+{
+	addOns[]=
+	{
+		"united_states_h"
+	};
+	addOnsAuto[]=
+	{
+		"united_states_h"
+	};
+	randomSeed=15149185;
+	class Intel
+	{
+		startWeather=0.34999999;
+		startWind=0.1;
+		forecastWeather=0.34999999;
+		forecastWind=0.1;
+		year=2013;
+		day=8;
+		hour=11;
+		minute=20;
+	};
+};
+class OutroWin
+{
+	addOns[]=
+	{
+		"united_states_h"
+	};
+	addOnsAuto[]=
+	{
+		"united_states_h"
+	};
+	randomSeed=12914286;
+	class Intel
+	{
+		startWeather=0.34999999;
+		startWind=0.1;
+		forecastWeather=0.34999999;
+		forecastWind=0.1;
+		year=2013;
+		day=8;
+		hour=11;
+		minute=20;
+	};
+};
+class OutroLoose
+{
+	addOns[]=
+	{
+		"united_states_h"
+	};
+	addOnsAuto[]=
+	{
+		"united_states_h"
+	};
+	randomSeed=15104324;
+	class Intel
+	{
+		startWeather=0.34999999;
+		startWind=0.1;
+		forecastWeather=0.34999999;
+		forecastWind=0.1;
+		year=2013;
+		day=8;
+		hour=11;
+		minute=20;
+	};
+};
